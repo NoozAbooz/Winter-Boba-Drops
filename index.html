@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Path Mirror</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- emoji favicon -->
+    <link
+        rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪞</text></svg>"
+    />
+</head>
+<body>
+    <div class="container">
+        <h1>Path Mirror 🪞</h1>
+        
+        <div class="mirror-selection">
+            <label>Mirror Selection:</label>
+            <div class="radio-group">
+                <label class="radio-label">
+                    <input type="radio" name="mirror" value="X" class="mirror-radio" checked>
+                    <span class="mirror-label">Mirror X</span>
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="mirror" value="Y" class="mirror-radio">
+                    <span class="mirror-label">Mirror Y</span>
+                </label>
+            </div>
+        </div>
+
+        <textarea id="input" rows="10" placeholder="Paste your chassis commands here..."></textarea>
+
+        <div class="button-container">
+            <div></div>
+            <div class="button-group">
+                <button id="clearButton" class="button button-red">Clear</button>
+                <button id="copyButton" class="button button-blue">Copy Results</button>
+            </div>
+        </div>
+
+        <div id="console">
+            Processed results will appear here...
+        </div>
+    </div>
+	
+    <div class="info-section">
+        <p>
+            Currently in competing in VEX High Stakes and<br>
+            using a library like LemLib? This website will mirror
+            your paths to the other alliance! Just paste
+            all of your code and it will convert recognized movements (chassis.moveToPoint or chassis.turnToPoint). 
+        </p>
+        <img src="image.png" alt="Sample Image">
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
